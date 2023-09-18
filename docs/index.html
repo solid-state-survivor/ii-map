@@ -265,7 +265,7 @@
                         let offset = (pieceIsBlack === !playerToMove) ? 6 : 0;
                         let planeIndex = offset + pieceToPlaneIndex[board[square][1]];
                         if (playerToMove) {
-                            sample[planeIndex][j - 7][i] = 1;
+                            sample[planeIndex][7 - j][i] = 1;
                         } else {
                             sample[planeIndex][j][i] = 1;
                         }
